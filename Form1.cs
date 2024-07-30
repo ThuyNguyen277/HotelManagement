@@ -2,6 +2,7 @@
 using System.Data;
 using System.Windows.Forms;
 
+//ホテル管理システム
 namespace HotelManegemantSystem
 {
     public partial class Form1 : Form

@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.BtnExit = new Guna.UI2.WinForms.Guna2Button();
-            this.BtnMinisize = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.BtnEmploy = new Guna.UI2.WinForms.Guna2Button();
             this.BtnCustomDetail = new Guna.UI2.WinForms.Guna2Button();
@@ -39,17 +38,18 @@
             this.BtnCustomRes = new Guna.UI2.WinForms.Guna2Button();
             this.BtnAddRoom = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.uC_Employee1 = new HotelManegemantSystem.All_User_Control.UC_Employee();
+            this.uC_CustomerDetails1 = new HotelManegemantSystem.All_User_Control.UC_CustomerDetails();
+            this.uC_Checkout1 = new HotelManegemantSystem.All_User_Control.UC_Checkout();
+            this.uC_CustomRes1 = new HotelManegemantSystem.All_User_Control.UC_CustomRes();
+            this.uC_AddRoom1 = new HotelManegemantSystem.All_User_Control.UC_AddRoom();
             this.PnlMoving = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.uC_CustomerDetails1 = new HotelManegemantSystem.All_User_Control.UC_CustomerDetails();
-            this.uC_Checkout1 = new HotelManegemantSystem.All_User_Control.UC_Checkout();
-            this.uC_CustomRes1 = new HotelManegemantSystem.All_User_Control.UC_CustomRes();
-            this.uC_AddRoom1 = new HotelManegemantSystem.All_User_Control.UC_AddRoom();
-            this.uC_Employee1 = new HotelManegemantSystem.All_User_Control.UC_Employee();
+            this.BtnLogout = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
@@ -70,22 +70,6 @@
             this.BtnExit.Size = new System.Drawing.Size(39, 42);
             this.BtnExit.TabIndex = 0;
             this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
-            // 
-            // BtnMinisize
-            // 
-            this.BtnMinisize.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.BtnMinisize.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.BtnMinisize.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.BtnMinisize.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.BtnMinisize.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
-            this.BtnMinisize.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.BtnMinisize.ForeColor = System.Drawing.Color.White;
-            this.BtnMinisize.Image = ((System.Drawing.Image)(resources.GetObject("BtnMinisize.Image")));
-            this.BtnMinisize.ImageSize = new System.Drawing.Size(35, 35);
-            this.BtnMinisize.Location = new System.Drawing.Point(2, 49);
-            this.BtnMinisize.Name = "BtnMinisize";
-            this.BtnMinisize.Size = new System.Drawing.Size(39, 42);
-            this.BtnMinisize.TabIndex = 1;
             // 
             // guna2Panel1
             // 
@@ -201,33 +185,13 @@
             this.guna2Panel2.Size = new System.Drawing.Size(1882, 852);
             this.guna2Panel2.TabIndex = 3;
             // 
-            // PnlMoving
+            // uC_Employee1
             // 
-            this.PnlMoving.BackColor = System.Drawing.Color.Aqua;
-            this.PnlMoving.Location = new System.Drawing.Point(69, 163);
-            this.PnlMoving.Name = "PnlMoving";
-            this.PnlMoving.Size = new System.Drawing.Size(284, 7);
-            this.PnlMoving.TabIndex = 4;
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.TargetControl = this;
-            // 
-            // guna2Elipse2
-            // 
-            this.guna2Elipse2.TargetControl = this;
-            // 
-            // guna2Elipse3
-            // 
-            this.guna2Elipse3.TargetControl = this;
-            // 
-            // guna2Elipse4
-            // 
-            this.guna2Elipse4.TargetControl = this;
-            // 
-            // guna2Elipse5
-            // 
-            this.guna2Elipse5.TargetControl = this;
+            this.uC_Employee1.BackColor = System.Drawing.Color.White;
+            this.uC_Employee1.Location = new System.Drawing.Point(0, 0);
+            this.uC_Employee1.Name = "uC_Employee1";
+            this.uC_Employee1.Size = new System.Drawing.Size(1882, 852);
+            this.uC_Employee1.TabIndex = 4;
             // 
             // uC_CustomerDetails1
             // 
@@ -261,13 +225,50 @@
             this.uC_AddRoom1.Size = new System.Drawing.Size(1882, 852);
             this.uC_AddRoom1.TabIndex = 0;
             // 
-            // uC_Employee1
+            // PnlMoving
             // 
-            this.uC_Employee1.BackColor = System.Drawing.Color.White;
-            this.uC_Employee1.Location = new System.Drawing.Point(0, 0);
-            this.uC_Employee1.Name = "uC_Employee1";
-            this.uC_Employee1.Size = new System.Drawing.Size(1882, 852);
-            this.uC_Employee1.TabIndex = 4;
+            this.PnlMoving.BackColor = System.Drawing.Color.Aqua;
+            this.PnlMoving.Location = new System.Drawing.Point(69, 163);
+            this.PnlMoving.Name = "PnlMoving";
+            this.PnlMoving.Size = new System.Drawing.Size(284, 7);
+            this.PnlMoving.TabIndex = 4;
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.TargetControl = this;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.TargetControl = this;
+            // 
+            // guna2Elipse3
+            // 
+            this.guna2Elipse3.TargetControl = this;
+            // 
+            // guna2Elipse4
+            // 
+            this.guna2Elipse4.TargetControl = this;
+            // 
+            // guna2Elipse5
+            // 
+            this.guna2Elipse5.TargetControl = this;
+            // 
+            // BtnLogout
+            // 
+            this.BtnLogout.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BtnLogout.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BtnLogout.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BtnLogout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BtnLogout.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
+            this.BtnLogout.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnLogout.ForeColor = System.Drawing.Color.White;
+            this.BtnLogout.Image = ((System.Drawing.Image)(resources.GetObject("BtnLogout.Image")));
+            this.BtnLogout.ImageSize = new System.Drawing.Size(40, 40);
+            this.BtnLogout.Location = new System.Drawing.Point(2, 49);
+            this.BtnLogout.Name = "BtnLogout";
+            this.BtnLogout.Size = new System.Drawing.Size(39, 42);
+            this.BtnLogout.TabIndex = 5;
+            this.BtnLogout.Click += new System.EventHandler(this.BtnLogout_Click);
             // 
             // Dashboard
             // 
@@ -275,10 +276,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1940, 1100);
+            this.Controls.Add(this.BtnLogout);
             this.Controls.Add(this.PnlMoving);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
-            this.Controls.Add(this.BtnMinisize);
             this.Controls.Add(this.BtnExit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Dashboard";
@@ -295,7 +296,6 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Button BtnExit;
-        private Guna.UI2.WinForms.Guna2Button BtnMinisize;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2Button BtnAddRoom;
@@ -314,5 +314,6 @@
         private All_User_Control.UC_CustomerDetails uC_CustomerDetails1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse5;
         private All_User_Control.UC_Employee uC_Employee1;
+        private Guna.UI2.WinForms.Guna2Button BtnLogout;
     }
 }
