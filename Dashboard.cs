@@ -80,5 +80,23 @@ namespace HotelManegemantSystem
             uC_Employee1.Visible = true;   //「スタッフ」コントロールを表示にします
             uC_Employee1.BringToFront();   //「スタッフ」コントロールを最前面に表示します
         }
+
+        /// <summary>
+        /// ログアウトのアイコンがクリックされる時の処理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BtnLogout_Click(object sender, EventArgs e)
+        {
+            //ログアウトアイコンクリックされたら確認メッセージボックスを表示する
+            DialogResult result = MessageBox.Show("ログアウトしますか？", "確認", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            //OKボタンをクリックされる場合
+            if (result == DialogResult.OK)
+            {
+                Form1 form1 = new Form1();  ////Form1(ログイン）フォームのインスタンスを作成します
+                form1.Show();   //ログインフォームを表示する
+                this.Close();   //現在のフォームを閉じる
+            }
+        }
     }
 }
